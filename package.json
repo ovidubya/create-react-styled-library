@@ -1,6 +1,6 @@
 {
   "name": "create-react-styled-library",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A cli to build a React component library",
   "main": "index.js",
   "bin": {
