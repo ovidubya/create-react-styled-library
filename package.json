@@ -1,0 +1,40 @@
+{
+  "name": "create-react-styled-library",
+  "version": "1.0.0",
+  "description": "A cli to build a React component library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "styled",
+    "components",
+    "module",
+    "package",
+    "create-react-app",
+    "cli",
+    "rollup",
+    "babel"
+  ],
+  "author": "Ovadia Shalom <ovadia.shalom@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "^4.17.6",
+    "commander": "^5.1.0",
+    "execa": "^4.0.2",
+    "express": "^4.17.1",
+    "git-config-path": "^2.0.0",
+    "github-username": "^5.0.1",
+    "globby": "^11.0.1",
+    "handlebars": "^4.7.6",
+    "inquirer": "^7.2.0",
+    "make-dir": "^3.1.0",
+    "node-fetch": "^2.6.0",
+    "open": "^7.0.4",
+    "ora": "^4.0.4",
+    "p-each-series": "^2.1.0",
+    "parse-git-config": "^3.0.0",
+    "validate-npm-package-name": "^3.0.0"
+  }
+}
