@@ -14,11 +14,9 @@ async function main() {
   program.parse(process.argv);
 
   if (program.openWithBrowser) {
-    console.log("genearing with browser");
     let results = await promptLibraryParams();
     createLibrary(info);
   } else {
-    console.log("genearitng with cli");
     let info = await promptLibraryParams();
     createLibrary(info);
   }

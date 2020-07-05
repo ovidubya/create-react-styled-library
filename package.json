@@ -1,6 +1,6 @@
 {
   "name": "create-react-styled-library",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A cli to build a React component library",
   "main": "index.js",
   "bin": {
@@ -39,5 +39,9 @@
     "p-each-series": "^2.1.0",
     "parse-git-config": "^3.0.0",
     "validate-npm-package-name": "^3.0.0"
-  }
+  },
+  "files": [
+    "templates",
+    "src"
+  ]
 }
