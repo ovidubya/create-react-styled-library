@@ -14,9 +14,9 @@
     "node": ">=10"
   },
   "scripts": {
+    "start": "start-storybook -p 8080",
     "build": "microbundle --jsx React.createElement",
     "build:watch": "microbundle watch",
-    "start": "start-storybook -p 8080",
     "prepack": "npm run build"
   },
   "peerDependencies": {
