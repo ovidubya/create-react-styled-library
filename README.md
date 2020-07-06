@@ -10,6 +10,8 @@
 
 This CLI will easily allow you to bootstrap a component library using [styled-components](https://styled-components.com/)
 
+Here is an [example](https://github.com/ovidubya/styled-components-lib-example) repo of what the CLI produces
+
 ## Features
 
 - Creates a commonjs and es module bundles.

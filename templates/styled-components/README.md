@@ -34,6 +34,10 @@ const App = () => {
 }
 ```
 
+## Live Demo
+
+For examples of the {{name}} in action, checkout the storybook <a href="https://{{author}}.github.io/{{name}}" target="_blank">here</a>.
+
 ## Develop
 
 This will open a storybook dev server on `http://localhost:8080`
