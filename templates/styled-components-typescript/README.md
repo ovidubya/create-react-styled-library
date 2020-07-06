@@ -52,13 +52,23 @@ This will output the cjs and es modules to the `dist` folder
 $ npm run build
 ```
 
-## Publish
+## Deploy github page
+
+This will publish storybook as a Github page
+
+```bash
+$ npm run deploy-github-page
+```
+
+## Publish to npm
 
 (you need to be logged in via npm for publishing)
 
 ```bash
 $ npm publish
 ```
+
+## Publish locally
 
 To create a local TAR file to test before publishing, run
 

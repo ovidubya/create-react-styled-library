@@ -17,7 +17,7 @@
     "build": "microbundle --jsx React.createElement",
     "build:watch": "microbundle watch",
     "build-storybook": "build-storybook -c .storybook -o storybook-dist",
-    "deploy-github-page": "gh-pages -d storybook-dist",
+    "deploy-github-page": "npm run build-storybook && gh-pages -d storybook-dist",
     "prepack": "npm run build"
   },
   "peerDependencies": {
