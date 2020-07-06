@@ -5,7 +5,7 @@
   "author": "{{author}}",
   "license": "{{license}}",
   "repository": "{{repo}}",
-  "source": "index.ts",
+  "source": "index.js",
   "main": "dist/index.js",
   "module": "dist/index.module.js",
   "unpkg": "dist/index.umd.js",
@@ -16,6 +16,8 @@
     "start": "start-storybook -p 8080",
     "build": "microbundle --jsx React.createElement",
     "build:watch": "microbundle watch",
+    "build-storybook": "build-storybook -c .storybook -o storybook-dist",
+    "deploy-github-page": "gh-pages -d storybook-dist",
     "prepack": "npm run build"
   },
   "peerDependencies": {
