@@ -1,7 +1,10 @@
 {
   "name": "create-react-styled-library",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A cli to build a React component library",
+  "repository": "ovidubya/create-react-styled-library",
+  "author": "Ovadia Shalom <ovadia.shalom@gmail.com>",
+  "license": "MIT",
   "main": "index.js",
   "bin": {
     "create-react-styled-library": "index.js"
@@ -21,8 +24,6 @@
     "rollup",
     "babel"
   ],
-  "author": "Ovadia Shalom <ovadia.shalom@gmail.com>",
-  "license": "MIT",
   "dependencies": {
     "@types/express": "^4.17.6",
     "commander": "^5.1.0",

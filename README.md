@@ -6,7 +6,7 @@
 
 ## Intro
 
-![CLI Example](intro.gif)
+![CLI Example](https://raw.githubusercontent.com/ovidubya/create-react-styled-library/master/intro.gif)
 
 This CLI will easily allow you to bootstrap a component library using [styled-components](https://styled-components.com/)
 
@@ -47,7 +47,7 @@ $ npm start
 
 This will start a storybook dev server with hot reloading for development
 
-![Storybook Example Website](storybook.png)
+![Storybook Example Website](https://raw.githubusercontent.com/ovidubya/create-react-styled-library/master/storybook.png)
 
 To build the bundle, run
 
