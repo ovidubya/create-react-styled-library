@@ -2,7 +2,7 @@
 
 > Inspired and forked from [create-react-library](https://github.com/transitive-bullshit/create-react-library)
 
-[![NPM](https://img.shields.io/npm/v/{{name}}.svg)](https://www.npmjs.com/package/{{name}}) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/create-react-styled-library.svg)](https://www.npmjs.com/package/create-react-styled-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Intro
 
