@@ -10,15 +10,20 @@ module.exports = async () => {
   const gitConfigPath = getGitConfigPath("global");
   let author = "";
 
-  if (gitConfigPath) {
-    const gitConfig = parseGitConfig.sync({ path: gitConfigPath });
+  try {
+    if (gitConfigPath) {
+      const gitConfig = parseGitConfig.sync({ path: gitConfigPath });
 
-    if (gitConfig.github && gitConfig.github.user) {
-      author = gitConfig.github.user;
-    } else if (gitConfig.user && gitConfig.user.email) {
-      author = await githubUsername(gitConfig.user.email);
+      if (gitConfig.github && gitConfig.github.user) {
+        author = gitConfig.github.user;
+      } else if (gitConfig.user && gitConfig.user.email) {
+        author = await githubUsername(gitConfig.user.email);
+      }
     }
+  } catch (e) {
+    author = "example-username";
   }
+
   const opts = {
     author: author,
     description: `Made with ${require("../package.json").name}`,
