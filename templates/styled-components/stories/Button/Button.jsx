@@ -1,31 +1,59 @@
-import React from 'react'
+import { withInfo } from '@storybook/addon-info'
 import { Button } from '../../components/Button'
-import { withKnobs, select } from '@storybook/addon-knobs'
-import { theme, Colors } from '../../components/theme/theme'
+import { colors } from '../../components/theme'
 
-export default { title: 'Button', decorators: [withKnobs] }
+export default {
+  title: 'Button',
+  component: Button,
+  decorators: [withInfo],
+  parameters: {
+    info: {
+      inline: true,
+      header: false
+    }
+  },
+  argTypes: {
+    size: {
+      control: {
+        type: 'select',
+        options: ['small', 'medium', 'large']
+      }
+    },
+    borderRadius: {
+      control: {
+        type: 'select',
+        options: ['square', 'circle']
+      }
+    },
+    backgroundColor: {
+      control: {
+        type: 'select',
+        options: Object.keys(colors)
+      }
+    },
+    color: {
+      control: {
+        type: 'select',
+        options: Object.keys(colors)
+      }
+    }
+  }
+}
 
-export const defaultButton = () => {
-  const backgroundColor = select(
-    'Background Color: ',
-    Object.keys(theme.colors),
-    'primary'
-  )
+export const Primary = {
+  args: {
+    children: 'Primary',
+    borderRadius: 'circle',
+    color: 'white',
+    backgroundColor: 'primary'
+  }
+}
 
-  const color = select('Color: ', ['white', 'black'], 'white')
-
-  const size = select('Size: ', ['small', 'medium', 'large'], 'small')
-
-  const borderRadius = select('Border Radius: ', ['square', 'circle'], 'square')
-
-  return (
-    <Button
-      borderRadius={borderRadius}
-      size={size}
-      backgroundColor={backgroundColor}
-      color={color}
-    >
-      Button
-    </Button>
-  )
+export const Classy = {
+  args: {
+    children: 'Classy',
+    borderRadius: 'circle',
+    color: 'white',
+    backgroundColor: 'black'
+  }
 }
