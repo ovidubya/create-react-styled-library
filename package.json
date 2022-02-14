@@ -1,6 +1,6 @@
 {
   "name": "create-react-styled-library",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "A cli to build a React component library",
   "repository": "ovidubya/create-react-styled-library",
   "author": "Ovadia Shalom <ovadia.shalom@gmail.com>",
